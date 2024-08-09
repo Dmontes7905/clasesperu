@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/clase11.css">
+</head>
+<body>
+  <!-- <form>
+    <input type="text" placeholder="Ingrese su nombre" autocomplete="on">
+  
+   <br><input type="text" placeholder="Ingrese sus apellidos" autocomplete="on">
+
+   <br><input type="password" placeholder="Ingrese su contraseña">
+
+   <br><input type="color" name="color">
+
+   <br><input type="radio" name="ecivil" value="soltero"> Soltero
+   <br><input type="radio" name="ecivil" value="casado" > Casado
+   <br><input type="radio" name="ecivil" value="viudo" checked> Viudo
+
+   <br>Elija su categoría de película favorita:
+   <br><input type="checkbox" name="categorias" value="suspenso"> Suspenso
+   <br><input type="checkbox" name="categorias" value="romance"> Romance
+   <br><input type="checkbox" name="categorias" value="terror"> Terror
+    <br>
+   <br>Fecha de envío:
+   <br><input type="date" name="fechaenvio" id="">
+  </form> -->
+
+  <header></header>
+  <nav></nav>
+  <section class="formulario-registro">
+    <h4 class="titulo">Formulario de Registro</h4>
+    <form>
+        <input class="controles" type="text" name="nombre" id="" autocomplete="on" placeholder="Ingrese sus nombres">
+
+        <input type="text" class="controles" autocomplete="on" placeholder="Ingrese sus apellidos" name="apellidos">
+
+        <input type="text" class="controles" autocomplete="on" placeholder="Ingrese su Teléfono" name="telefono">
+
+        <!-- Crear grupo de controles para sexo -->
+         <fieldset class="grupo">
+            <legend>Sexo:</legend>
+            <input type="radio" class="radio" name="sexo" value="femenino">Femenino 
+            <input type="radio" class="radio" name="sexo" value="masculino">Masculino 
+            <input type="radio" class="radio" name="sexo" value="nqc">Prefiero no contestar 
+         </fieldset>
+
+         <fieldset class="grupo">
+            <legend>Fecha de nacimiento:</legend>
+            <input type="date" class="controles">
+         </fieldset>
+
+         <input class="controles" type="text" name="usuario" id="" placeholder="Ingrese su usuario">  
+
+         <input class="controles" type="password" name="pass" id="" placeholder="Ingrese su contraseña"> 
+
+         <input class="boton" type="submit" value="enviar">
+         <input class="boton" type="reset" value="limpiar">
+    </form>
+  </section>
+
+  <footer></footer>
+</body>
+</html>

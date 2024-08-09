@@ -1,0 +1,43 @@
+/* modificaremos el selector h2 */
+h2{
+  color: #c1b7be;  
+  background-color: rgb(60, 9, 41);
+ 
+  /* modificar el ancho con width */
+  width: 800px;
+  /* ubicar en el centro */
+  margin: auto;
+  
+  /* agregar margen interno padding */
+  padding: 15px ;
+  /* redondear bordes */
+  border-radius: 15px;
+  /* centrar el texto */
+  text-align: center;
+  /* agregar margen superior */
+  margin-top:25px ;
+}
+
+/* modificaremos la etiqueta p */
+p{
+    /* ancho del bloque parrafo */
+    width: 800px;
+    /* centrar el bloque parrafo al medio */
+    margin: auto;
+    /* margen superior */
+    margin-top: 15px;
+    /* alinear de manera justificada el texto */
+    text-align: justify;
+}
+
+/* modificaremos la etiqueta img */
+img{
+      border-radius: 20px;
+      /* agregar sombra paralela */
+      box-shadow: 5px 5px 10px gray;
+}
+
+/* APLICAR COLOR DE FONDO EN BODY */
+body{
+    background-color: rgb(243, 238, 232);
+}

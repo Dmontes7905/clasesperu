@@ -1,0 +1,95 @@
+header{
+    background-image: url(/img/banner-sedes-desktop_0.jpg);
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+nav{
+    width: 1000px;
+    height: 60px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+section{
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    background-color: beige;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.table{
+    display: table; /* asignar comportamiento de tabla */
+    width: 70%;
+    margin: auto;
+    background-color: chocolate;
+    border-collapse: collapse;/*  permite colapsar bordes de la tabla */
+    border-radius: 20px;
+}
+
+.row{
+    display: table-row; /* asignar comportamiento de fila */
+    
+}
+
+.cell{
+    display: table-cell; /* asignar comportamiento de celda */
+    border: 2px solid rgb(245, 245, 220);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+footer{
+    width: 1000px;
+    height:60px;
+    background-color: rgb(84, 75, 75);
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+/* aplicar cambios solo a los UL que se encuentren en NAV */
+nav ul{
+    /* quitar viñeta */
+    list-style-type: none;
+  
+}
+
+nav ul a{
+    /* quitar subrayado */
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav ul li{
+    float: left;
+    margin: auto;
+}
+
+/* cambiar de color al pasar el mouse */
+nav ul a:hover{
+    background-color: grey;
+}
+
+/* modificar las porpiedades del submenu */
+nav li ul{
+    position: absolute;
+    width: 150px;
+    display: none; /* ocultar el submenu */
+}
+
+nav li:hover >ul{
+    display: block;
+}

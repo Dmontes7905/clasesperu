@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 234);
+}
+
+header{
+    width: 1fr;
+    height: 400px;
+    background-image: url(/img/banner1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 900px;
+    height: 65px;
+    margin: auto;
+    background-color: rgb(61, 2, 2);
+    margin-top: 5px;
+}
+
+/* aplicar formato al formulario */
+.formulario-registro{
+    margin: auto;
+    width: 500px;
+    background-color: rgb(85, 28, 28);
+    color: azure;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom:50px ;
+}
+
+/* aplicar formato al título */
+.titulo{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+/* aplicar formato a los controles */
+.controles{
+    width: 90%;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* aplicar formato a los grupos de sexo y fecha */
+.grupo{
+    padding: 15px;
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+/* aplicar formato a los controles sexo */
+.radio{
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+/* aplicar formato a los botones enviar y limpiar */
+.boton{
+    width: 150px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+footer{
+    width: 1fr;
+    height: 65px;
+    margin: auto;
+    background-color: rgb(51, 44, 44);
+    margin-top: 5px;
+}

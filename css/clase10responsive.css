@@ -1,0 +1,17 @@
+/* PASO 1: CONTENEDOR PRINCIPAL */
+.grid-container{
+  display: grid;
+  /* definir cantidad de columnas   */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  /* modificar el espacio entre columnas y filas */
+  gap: 10px;
+}
+
+/* PASO 2: aplicar formato a los contenedores hijos */
+.grid-item{
+    background-color: aqua;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}

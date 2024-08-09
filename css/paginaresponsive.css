@@ -1,0 +1,133 @@
+/* PASO 1: ESTILOS GENERALES */
+body{
+    background-color: rgb(249, 249, 240);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PASO 2: BANNER */
+.banner{
+    width: 1fr;
+    height: 450px;
+    background-image: url(/img/banner3.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+/* PASO 3: BARRA DE MENU */
+.menu{
+    background-color: rgb(39, 38, 38);
+}
+
+.menu ul{
+    list-style-type: none; /* quitar la viñeta */
+    margin: 0;
+    padding: 0;
+    display: flex; /* usar flex para la distribución hor */
+    justify-content: center;
+}
+
+.menu ul li{
+    margin: 0 15px; /* espacio entre los elementos del menú */
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+/* PASO 4: USAR HOVER PARA CREAR BOTONES INTERACTIVOS */
+.menu ul li a:hover{
+ background-color: gray;
+}
+
+/* PASO 5: CONTENEDOR PADRE HISTORIA */
+.historia{
+    margin-bottom: 2rem;
+}
+
+.historia-contenido{
+    display: flex;
+}
+
+.historia-contenido img{
+    margin-right: 20px;
+    box-shadow: 10px 5px 10px gray;
+    border-radius: 15px;
+}
+
+.historia-contenido p{
+    flex: 1; /* el texto ocupara el espacio restante dentro del contenedor flex */
+    text-align: justify;
+}
+
+/* PASO 6: GALERIA */
+.galeria{
+    margin-bottom: 2rem;
+}
+
+.galeria-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galeria-item img{
+    width: 100%; /* c/imagen ocupará el 100% del espacio del contenedor */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 3px 10px gray;
+}
+
+/* PASO 7: FOOTER */
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* PASO 8: ESTILOS PARA DISPOSITIVOS MOVILES */
+@media (max-width: 768px){
+   .menu ul{
+    flex-direction: column; /* cambiar la dirección en columnas*/
+   }  
+
+   .menu ul li{
+    margin: 0;
+    border-bottom: 2px solid rgb(90, 89, 89);
+   }
+
+   .menu ul li a{
+    text-align: center;
+   }
+   
+   .historia-contenido{
+    flex-direction: column;
+   }
+
+   .historia-contenido img{
+    margin-right: 0;
+    margin-bottom: 20px;
+   }
+
+   .galeria-grid{
+    grid-template-columns: 1fr;
+   }
+   
+   .historia-contenido p{
+    padding: 35px;
+   }
+
+}
+
+/* PASO 9: TABLETA */
+@media (min-width: 769px) and (max-width: 1024px){
+    .galeria-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

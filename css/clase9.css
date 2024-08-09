@@ -1,0 +1,87 @@
+/* header{
+    width: 900px;
+    height: 250px;
+    background-color: black;
+    margin: auto;
+} */
+
+nav{
+    width: 900px;
+    height: 60px;
+    background-color: rgb(85, 170, 207);
+    margin: auto;
+    margin-top: 5px;
+}
+
+.elipse{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    /* asignar nombre a la animación */
+    animation-name: animaelipse ;
+
+    /* definir la duración */
+    animation-duration: 10s;
+
+    /* definir las repeticiones de la animación */
+    animation-iteration-count: infinite;
+}
+
+/* Desencadenar la animación usando la regla Keyframes */
+@keyframes animaelipse{
+    /* definir momentos de la animación */
+    0%{background-color: rgb(213, 211, 211); }
+    50%{background-color: yellow;border-radius: 0;}
+    100%{background-image: url(/img/banner1.png);background-position: center; width: 250px;}
+}
+
+
+footer{
+    width: 900px;
+    height: 60px;
+    background-color: rgb(243, 114, 181);
+    margin: auto;
+    margin-top: 5px;
+}
+
+/* llamar al contenedor principal */
+.slider{
+    width: 900px;
+    /* height: 350px; */
+    margin: 50px auto;
+    /* Aplicar una mascara, evitar que la imagen se derborde del objeto contenedor */
+    overflow: hidden;
+    border: 2px solid rgb(164, 162, 162);
+    box-shadow: 0 4px 11px rgb(72, 67, 67);
+}
+
+/* Llamar al contenedor de todas las imágenes */
+.slides{
+    display: flex;
+    width: 300%;
+   animation-name: banner;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+
+/* llamar al contenedor de cada imagen */
+.slide{
+    width: 900px;
+}
+
+/* cambiar altura de las imagenes que se encuentren en la calse slide */
+.slide img{
+    height: 350px;
+    display: block;
+}
+
+@keyframes banner{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
